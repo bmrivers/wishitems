@@ -14,7 +14,7 @@
         {% for item in items_list %}
         <tr>
             <td>{{item.description}}</td>
-            <td><a href="">X</a></td>
+            <td><a href="{% url 'item_delete' item.id %}">X</a></td>
         </tr>
         {% endfor %}
     </tbody>
